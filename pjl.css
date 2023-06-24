@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html, body {
+  min-height: 100vh;
+}
+:root {
+  --fonte1: 'Barlow', sans-serif;
+  --fonte2: 'Nunito', sans-serif;
+}
+header, footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: var(--fonte1);
+}
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 8vw;
+}
+header > p {
+  padding-bottom: 50px;
+  font-size: 3vw;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 3.7vw;
+}
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 30px;
+  line-height: 2em;
+  font-family: var(--fonte2);
+}
+section > p {
+  padding: 25px;
+}
+section.normal {
+  background-color: white;
+  color: black;
+}
+section.imagem {
+  background-color: darkgray;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 12px 0px #0000005a;
+}
+section.imagem > p {
+  display: inline-block;
+  background-color: #5d5d5d00;
+}
+section#img1 {
+  background-image: url('conteudo/febre2.jpg');
+}
+section#img2 {
+  background-image: url('conteudo/puma.jpg');
+}
+footer {
+  padding: 10px;
+  font-size: 3vw;
+}
